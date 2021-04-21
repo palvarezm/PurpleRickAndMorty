@@ -7,6 +7,7 @@ target 'RickAndMorty' do
 
   # Pods for RickAndMorty
 pod 'Alamofire', '~> 5.2'
+pod 'SDWebImage', '~> 5.0'
   target 'RickAndMortyTests' do
     inherit! :search_paths
     # Pods for testing

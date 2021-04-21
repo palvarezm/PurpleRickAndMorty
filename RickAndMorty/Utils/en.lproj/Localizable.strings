@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  RickAndMorty
+
+  Created by Paul Alvarez on 20/04/21.
+  
+*/
+
+//MARK: General messages
+"generic_error" = "An error has ocurred";
+"generic_loading" = "Loading";
+
+//MARK: Alert messages
+"ok_alert" = "OK";
+"loading_please_wait" = "Please wait...";
