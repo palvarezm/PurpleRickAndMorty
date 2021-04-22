@@ -24,11 +24,11 @@
                             <constraint firstAttribute="width" constant="60" id="S3b-Fz-I0N"/>
                         </constraints>
                     </imageView>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zeF-1a-vaD">
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zeF-1a-vaD">
                         <rect key="frame" x="80" y="15" width="261" height="54"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9c-H3-ONx">
-                                <rect key="frame" x="0.0" y="0.0" width="261" height="21.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="261" height="13.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -37,24 +37,33 @@
                                 <rect key="frame" x="0.0" y="21.5" width="261" height="32.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VIP-sE-7tq">
-                                        <rect key="frame" x="0.0" y="6.5" width="20" height="20"/>
+                                        <rect key="frame" x="0.0" y="1.5" width="30" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="9VY-s9-o0Y"/>
-                                            <constraint firstAttribute="width" constant="20" id="NIH-85-XNk"/>
+                                            <constraint firstAttribute="height" constant="30" id="9VY-s9-o0Y"/>
+                                            <constraint firstAttribute="width" constant="30" id="NIH-85-XNk"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wEA-Wh-333">
-                                        <rect key="frame" x="28" y="6.5" width="20" height="20"/>
+                                        <rect key="frame" x="38" y="1.5" width="30" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="20" id="5fa-Rf-NzL"/>
-                                            <constraint firstAttribute="height" constant="20" id="f64-eU-5P7"/>
+                                            <constraint firstAttribute="width" constant="30" id="5fa-Rf-NzL"/>
+                                            <constraint firstAttribute="height" constant="30" id="f64-eU-5P7"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fpb-14-8Tt">
+                                        <rect key="frame" x="76" y="1.5" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="If1-pb-YBh"/>
+                                            <constraint firstAttribute="width" constant="30" id="UCn-3X-hv3"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="fpb-14-8Tt" firstAttribute="centerY" secondItem="zvC-fR-Rte" secondAttribute="centerY" id="0E7-d1-Fpv"/>
                                     <constraint firstItem="VIP-sE-7tq" firstAttribute="centerY" secondItem="zvC-fR-Rte" secondAttribute="centerY" id="0jj-ty-5Hv"/>
                                     <constraint firstItem="wEA-Wh-333" firstAttribute="centerY" secondItem="zvC-fR-Rte" secondAttribute="centerY" id="SAU-TT-y5h"/>
+                                    <constraint firstItem="fpb-14-8Tt" firstAttribute="leading" secondItem="wEA-Wh-333" secondAttribute="trailing" constant="8" id="WGg-Ek-QXU"/>
                                     <constraint firstItem="VIP-sE-7tq" firstAttribute="leading" secondItem="zvC-fR-Rte" secondAttribute="leading" id="XCm-6p-Fwm"/>
                                     <constraint firstItem="wEA-Wh-333" firstAttribute="leading" secondItem="VIP-sE-7tq" secondAttribute="trailing" constant="8" id="cQr-nb-Jak"/>
                                 </constraints>
@@ -81,6 +90,7 @@
                 <outlet property="characterImageView" destination="9Wr-a9-93a" id="HdX-1U-vXK"/>
                 <outlet property="characterNameLabel" destination="Z9c-H3-ONx" id="lb8-na-WwF"/>
                 <outlet property="genderImageView" destination="VIP-sE-7tq" id="dQG-El-NVb"/>
+                <outlet property="speciesImageView" destination="fpb-14-8Tt" id="oQq-YI-OJE"/>
                 <outlet property="statusImageView" destination="wEA-Wh-333" id="7uR-bg-45T"/>
             </connections>
             <point key="canvasLocation" x="84.782608695652186" y="116.18303571428571"/>

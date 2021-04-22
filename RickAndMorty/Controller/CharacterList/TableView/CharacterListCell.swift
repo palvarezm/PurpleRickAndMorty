@@ -14,6 +14,7 @@ class CharacterListCell: UITableViewCell {
     @IBOutlet weak var characterImageView: UIImageView!
     @IBOutlet weak var genderImageView: UIImageView!
     @IBOutlet weak var statusImageView: UIImageView!
+    @IBOutlet weak var speciesImageView: UIImageView!
     
     var character: CharacterResponse? {
         didSet {
@@ -24,6 +25,7 @@ class CharacterListCell: UITableViewCell {
             let genderImageName = GenderEnum.allCases.first { $0.rawValue == character?.gender}?.imageName ?? ""
             genderImageView.image = UIImage(named: genderImageName)
             statusImageView.image = character?.status == "Alive" ? #imageLiteral(resourceName: "ic_alive") : #imageLiteral(resourceName: "ic_dead")
+            speciesImageView.image = character?.species == "Human" ? #imageLiteral(resourceName: "ic_human") : #imageLiteral(resourceName: "ic_alien")
         }
     }
     
